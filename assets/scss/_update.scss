@@ -1,0 +1,99 @@
+.boddy {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.banner video {
+	position: absolute;
+	left: 0;
+	top: O;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container2 
+{
+ 	position: relative;
+	width: 80%;
+	// padding-top: 100px;
+	
+	h2 {
+		@include h2;
+		color: #000;
+		padding-bottom: 40px;
+	}
+
+	.row100 {
+		@include row100;
+	}
+
+	.row100 .col {
+	    @include col;
+		margin: 17px 0 10px;
+	}
+
+	.row100 .inputBox {
+		position: relative;
+		width: 100%;
+		height: 30px;
+		color: #000;
+	}
+
+	.row100 .inputBox input,
+	.row100 .inputBox.textarea textarea {
+		@include input;
+		padding: 0 10px;
+		color: #fff;
+	}
+
+	.row100 .inputBox .text {
+		@include text;
+	}
+
+	.row100 .inputBox input:focus + .text,
+	.row100 .inputBox input:valid + .text {
+		@include focus;
+	} 
+
+	.row100 .inputBox .line {
+		@include line;
+		background: rgba(0, 0, 0, .4);
+	}
+
+	.row100 .inputBox input:focus ~ .line,
+	.row100 .inputBox input:valid ~ .line {
+		height: 100%;
+	}
+
+	.row100 .inputBox.textarea {
+		 @include textarea;
+	}
+
+	.row100 .inputBox.textarea textarea {
+		height: 100%;
+		resize: none;
+		color: white;
+	}
+
+	.row100 .inputBox textarea:focus + .text,
+	.row100 .inputBox textarea:valid + .text {
+		top: -35px;
+		left: -10px;
+	} 
+	.row100 .inputBox textarea:focus ~ .line,
+	.row100 .inputBox textarea:valid ~ .line {
+		height: 100%;
+	} 
+}
+
+input[type="submit"] {
+	@include submit;
+	background: rgba(0, 0, 0, .4);
+	color: #fff;	
+}

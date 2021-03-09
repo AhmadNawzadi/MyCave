@@ -1,0 +1,83 @@
+// CSS POUR LE PAGE "ADD.PHP"
+
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container1 {
+    width: 80%;
+    padding: 20px;
+    // margin: 50px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+}
+
+.container1 h2 {
+    @include h2;
+    color: #fff;     
+}
+
+.container1 .row100 {
+    @include row100;
+    padding: 5px;
+}
+.container1 .row100 .col {
+    @include col;
+    margin: 20px 0 10px;   
+}
+.container1 .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+
+}
+.container1 .row100 .inputBox input,
+.container1 .row100 .inputBox.textarea textarea {
+    @include input;
+    color: #000;
+    padding: 5px;
+}
+.container1 .row100 .inputBox .text {
+ @include text;
+}
+
+.container1 .row100 .inputBox input:focus + .text,
+.container1 .row100 .inputBox input:valid + .text {
+    @include focus;
+} 
+.container1 .row100 .inputBox .line {
+    @include line;
+    background: #fff;
+}
+.container1 .row100 .inputBox input:focus ~ .line,
+.container1 .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+}
+.container1 .row100 .inputBox.textarea {
+    @include textarea;
+}
+.container1 .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.container1 .row100 .inputBox textarea:focus + .text,
+.container1 .row100 .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+} 
+.container1 .row100 .inputBox textarea:focus ~ .line,
+.container1 .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+} 
+
+input[type="submit"] {
+    @include submit;
+    background: #fff;
+    color: #000;
+}

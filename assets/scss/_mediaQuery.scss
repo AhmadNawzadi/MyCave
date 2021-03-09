@@ -1,0 +1,241 @@
+@media (max-width: 768px){
+
+    // MEDIA QUERY ”NAVBAR”
+    .checkbtn {
+    display: block;
+    margin-right: 40px;
+    }
+    .category {
+    position: fixed;
+    width: 100%;
+    height: 40%;
+    background: black;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    }
+
+    .dropdown {
+    display: block;
+    margin: 10px 0;
+    }
+
+    a:hover, .active{
+    background: none;
+    color: #0082e6;
+    }
+
+    #check:checked ~ .category {
+    left: 0;
+    }
+
+    .navbar 
+    {
+        .logo {
+        width: 20%;
+        }
+    }
+
+    .dropdown_menu 
+    {
+    color: white;
+    }
+
+    #drop-content1, #drop-content2, #drop-content3, #drop-content4 
+    {
+    background: #3E0018;
+    position: absolute;
+    display: none;
+    }
+
+    #drop-content1 a, #drop-content2 a, #drop-content3 a, #drop-content4 a
+    {
+    color: white;
+    text-align: left;
+    }
+
+    // ADD PAGE
+    .container1 h2 {
+    font-size: 20px;
+    padding: 10px;
+    }
+
+    .container1 .row100 {
+    padding: 0;
+    }
+
+    .container1 .row100 .col {
+    padding: 0 10px;
+    margin: 0 0 5px;
+    }
+
+    .container1 .row100 .inputBox {
+    width: 100%;
+    height: 30px;
+    }
+
+    .container1 .row100 .inputBox.textarea {
+    width: 100%; 
+    }
+    
+    .container1 .row100 .inputBox .text {
+    font-size: 15px;
+    }
+
+    footer {
+    padding: 15px 10px;
+    margin: 0;
+    
+    }
+
+
+    // UPDATE MEDIA QUERY 
+    .container2 
+    {
+        // padding-top: 50px;
+
+        h2 { 
+        font-size: 30px;
+        padding: 20px;
+        }
+
+        .row100 .inputBox input,
+        .row100 .inputBox.textarea textarea {
+        font-size: 15px;
+        }   
+
+        .row100 .inputBox .text {
+        font-size: 15px;
+        padding: 0 10px;
+        }
+    }
+
+    .banner video {
+    height: 100%;
+    object-fit: cover;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .navbar 
+    {
+        .logo 
+        {
+            width: 30%;
+        }
+    }
+
+    button 
+    {
+        font-weight: 300;
+    }
+
+    // add page: 
+    .container1 {
+    padding: 0;
+    margin: 0;
+   
+    }
+  
+    .container1 h2 {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .container1 .row100 .col {
+        padding: 0 10px;
+        margin: 0 0 5px;
+    }
+
+    .container1 .row100 .inputBox {
+        width: 100%;
+        height: 25px;
+    }
+
+    .container1 .row100 .inputBox.textarea {
+        width: 100%;
+        height: 90px; 
+    }
+
+    .container1 .row100 .inputBox .text {
+        font-size: 15px;
+        line-height: 0;
+        padding: 0;
+    }
+    .container1 .row100 .inputBox input,
+    .container1 .row100 .inputBox.textarea textarea {
+ 
+    font-size: 10px;
+    padding: 0;
+}
+
+    // UPDATE PAGE
+    .container2 
+    {
+        // padding-top: 50px;
+        h2{
+        font-size: 30px;
+        padding-bottom: 30px;
+        }
+
+        .row100 .col {
+        padding: 5px 0;
+        margin: 0 0 5px;
+        }
+
+        .row100 .inputBox {
+        width: 100%;
+        height: 25px;
+        }
+
+        .row100 .inputBox.textarea {
+        width: 100%; 
+        }
+
+        .row100 .inputBox .text {
+        font-size: 15px;
+        }
+
+        .row100 .inputBox .text {
+        padding: 5px 10px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+        }
+
+        .row100 .inputBox input,
+        .row100 .inputBox.textarea textarea {
+        font-size: 15px;
+        }
+
+        .row100 .inputBox .text {
+        font-size: 12px;
+        padding: 7px 10px;
+        }
+       
+    }
+
+    .loginBox {
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        width: 270px;
+        height: 350px;
+        padding: 40px 40px;
+    h2 {
+        padding: 10px 0 20px;
+        font-size: 25px;
+        }
+    }
+    .loginImage {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
